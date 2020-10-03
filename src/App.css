@@ -1,0 +1,28 @@
+body, button {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.button-wrapper {
+    margin: 50px;
+}
+button {
+    padding: 15px 25px;
+    font-size: 14px;
+    letter-spacing: .08em;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #F7CA18;
+    border-radius: 15px;
+}
+button:hover {
+    background-color: #F7CA18;
+}
+button:active {
+    background-color: #F7CA18;
+    transform: translateY(4px);
+}
+.active {
+    background-color: #F7CA18;
+}

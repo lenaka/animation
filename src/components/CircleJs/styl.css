@@ -1,0 +1,25 @@
+.circle-block-js {
+  height: 200px;
+  transition: height 1s ease-out 0.5s;
+}
+.circle-js {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.yellow-circle-js {
+  left: -200px;
+  background: yellow;
+}
+.orange-circle-js {
+  left: 20px;
+  background: orange;
+  visibility: hidden;
+}
+.red-circle-js {
+  left: 240px;
+  background: red;
+  visibility: hidden;
+}

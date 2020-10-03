@@ -1,0 +1,53 @@
+.circle-block-css {
+  animation: distance 4.2s forwards;
+  height: 200px;
+  transition: height 1s ease-out 0.5s;
+}
+.circle-css {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.yellow-circle-css {
+  left: -200px;
+  background: yellow;
+  animation: moveLeftToRightFirst 1s cubic-bezier(0.25, 1, 0.5, 1) forwards 0.2s,
+    moveLeftToRightSecond 1s cubic-bezier(0.25, 1, 0.5, 1) 1.2s forwards,
+    moveLeftToRightThird 1s cubic-bezier(0.25, 1, 0.5, 1) 2.2s forwards,
+    fadeIn 1.2s forwards;
+}
+.orange-circle-css {
+  left: 20px;
+  background: orange;
+  visibility: hidden;
+  animation: fadeIn 1.2s forwards;
+}
+.red-circle-css {
+  left: 240px;
+  background: red;
+  visibility: hidden;
+  animation: fadeIn 2.2s forwards;
+}
+
+@keyframes moveLeftToRightFirst {
+  0%   { left: -200px; }
+  100% { left: 20px; }
+}
+@keyframes moveLeftToRightSecond {
+  0%   { left: 20px; }
+  100% { left: 240px; }
+}
+@keyframes moveLeftToRightThird {
+  0%   { left: 240px; }
+  100% { left: 460px; }
+}
+@keyframes fadeIn {
+  99%  { visibility: hidden; }
+  100% { visibility: visible; }
+}
+@keyframes distance {
+  80% { transform: scale(1); }
+  100% { transform: scale(0.5); }
+}
