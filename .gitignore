@@ -26,6 +26,9 @@ node_modules/
 jspm_packages/
 storybook-static/
 
+*.lock
+package-lock.json
+
 .idea/*
 .idea/
 .idea
